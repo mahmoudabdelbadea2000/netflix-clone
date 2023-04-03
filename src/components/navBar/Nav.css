@@ -23,7 +23,8 @@
   align-items: center;
 }
 .nav__logo,
-.nav__avatar {
+.nav__avatar,
+.nav__sign {
   max-width: 80px;
   cursor: pointer;
   position: fixed;
@@ -33,8 +34,21 @@
   left: 10px;
 }
 .nav__avatar {
-  right: 20px;
-  top: 10px;
   width: 30px;
   height: 30px;
+  border-radius: 2.5px;
+  right: 20px;
+  top: 10px;
+}
+.nav__sign {
+  right: 20px;
+  top: 10px;
+  text-transform: capitalize;
+  border: none !important;
+  outline: none !important;
+  padding: 2.5px 10px !important;
+  border-radius: 2.5px;
+  color: #fff;
+  background-color: rgb(229, 9, 20);
+  font-weight: 500;
 }

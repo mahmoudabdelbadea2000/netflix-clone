@@ -1,11 +1,15 @@
 import React from "react";
-import HomeScreen from "./components/homeScreen/HomeScreen";
 import "./App.css";
+import Nav from "./components/navBar/Nav";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div className="app">
-      <HomeScreen />
+      <Nav />
+      <>
+        <Outlet />
+      </>
     </div>
   );
 }
